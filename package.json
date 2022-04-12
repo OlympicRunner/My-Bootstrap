@@ -1,16 +1,20 @@
 {
-  "name": "bootstrap-example",
+  "name": "github-bootstrap",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "homepage": "https://OlympicRunner.github.io/My-Bootstrap",
+  "main": "burger.js",
   "scripts": {
-    "deploy": "gh-pages -d public"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlympicRunner/Bootstrap.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
-  }
+  "bugs": {
+    "url": "https://github.com/OlympicRunner/Bootstrap/issues"
+  },
+  "homepage": "https://github.com/OlympicRunner/Bootstrap#readme"
 }

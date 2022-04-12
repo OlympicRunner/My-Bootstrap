@@ -1,0 +1,364 @@
+
+html {
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    }
+
+*,
+*::before
+*::after{
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-reset {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+figure {
+    margin: 0;
+}
+
+.p-reset {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.a-reset {
+    color: inherit;
+    text-decoration: none;
+    -webkit-transition: overflow;
+    transition: overflow;
+}
+
+.h1-reset {
+    margin: 0;
+}
+
+.h2-reset {
+    margin: 0;
+}
+
+.h3-reset {
+    margin: 0;
+}
+
+.ul-reset {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto-Regular"), url("fonts/Roboto-Regular.woff2") format("woff2");
+    src: local("Roboto-Regular"), url("fonts/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto-Bold"), url("fonts/Roboto-Bold.woff2") format("woff2");
+    src: local("Roboto-Bold"), url("fonts/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-white: #fff;
+    --very-gray: #212133;
+    --blue-color: #3F2AFF;
+    --blue-text-color: #2E2B44;
+    --gray-text-color: #666;
+    --gap: 30px;
+}
+
+    /* header  */
+
+.burger-box {
+    display: none;
+    position: absolute;
+    top: 28px;
+    right: 30px;
+}
+
+.header {
+    background-color: var(--blue-color);
+}
+
+.header__container {
+    padding: 28px 0;
+    align-items: center;
+}
+
+.header__block-logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hedaer-nav__item {
+    color: var(--color-white);
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.hedaer-nav__item:not(:last-child) {
+    margin-right: 56px;
+}
+
+/* hero  */
+
+.menu {
+    display: none;
+}
+
+
+.hero {
+    background:radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+    overflow: hidden;position: relative;
+}
+
+.container-hero {
+    padding: 130px 0;
+    background-image: url('img/hero-image.png');
+    background-position: right center;
+    background-position-x: calc(100% - 8px);
+    background-repeat: no-repeat;
+}
+
+.hero-info__h1 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 1;
+    color: var(--color-white);
+    margin-bottom: 30px;
+}
+
+.hero-info__p {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-white);
+    margin-bottom: 60px;
+}
+
+.hero-info__btn {
+    padding: 21px 75.5px;
+    background-color: var(--blue-color);
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-white);
+}
+
+/* plus  */
+
+.plus-row {
+    align-items: center;
+}
+
+.plus__container {
+    padding: 80px 0;
+
+}
+
+.plus-top {
+    margin-bottom: 23px;
+}
+
+.plus-top__img {
+    padding-top: 0;
+    padding-left: 15px;
+}
+.descr {
+    padding-left: 14px;
+}
+
+.plus-top__h2 {
+    max-width: 380px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100%;
+    margin-bottom: 19px;
+}
+
+.plus-top__p {
+    max-width: 585px;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-text-color);
+}
+
+.plus-bottom__li {
+    max-width: 374px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plus-bottom__p {
+    max-width: 240px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--gray-text-color);
+}
+
+/* teach  */
+
+.taechers {
+    background-color: var(--very-gray);
+}
+
+.teachers-list__item {
+    margin-top: 18px;
+}
+
+.container-teachers {
+    padding: 72px 0;
+}
+
+.teachers__h2 {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100%;
+    color: var(--color-white);
+}
+
+.teachers-list__h3 {
+    margin-top: 30px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-white);
+}
+
+.teachers-list__about {
+    font-size: 16px;
+    line-height: 150%;
+    color: #85859B;
+}
+
+/* courses  */
+
+.container-courses {
+    padding-top: 74px;
+    padding-bottom: 70px;
+}
+
+.courses-list__li {
+    margin-top: 0 !important;
+}
+
+.courses__h2 {
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100%;
+    color: #212133;
+}
+
+.courses-list__item {
+    max-width: 540px;
+    position: relative;
+    margin-top: 25px;
+    background-color: #EDF0F9;
+    border-radius: 20px;
+}
+.time {
+    top: 5px;
+    right: 5px;
+    padding: 3px 0 3px 30px ;
+    position: absolute;
+    background-image: url(img/time-mini.svg);
+    background-repeat: no-repeat;
+}
+
+.time__p {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-white);
+}
+
+.courses-list__content {
+    padding: 30px;
+}
+
+.courses-list__h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--very-gray);
+}
+
+.courses-list__info {
+    min-height: 125px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-text-color);
+}
+
+.courses-list__btn {
+    padding: 20.5px 59px;
+    border-radius: 20px;
+    background-color: var(--blue-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+/* footer  */
+.footer-color {
+    background-color: var(--blue-text-color);
+}
+
+.footer-top {
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-list__link  {
+    padding: 0 17px;
+}
+
+.footer-low {
+    align-items: center;
+    justify-content: space-evenly;
+}

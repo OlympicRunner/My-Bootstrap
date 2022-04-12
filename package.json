@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://OlympicRunner.github.io/",
+  "homepage": "https://OlympicRunner.github.io/My-Bootstrap",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d public"
   },
   "keywords": [],
   "author": "",
